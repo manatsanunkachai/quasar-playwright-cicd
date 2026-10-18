@@ -19,7 +19,7 @@ export default defineConfig({
     { name: 'webkit', use: { browserName: 'webkit' } },
   ],
   webServer: {
-    command: `npx.cmd http-server "${dist}" -p 4173 -s`,
+    command: `npx http-server "${dist}" -p 4173 -s`,
     url: 'http://127.0.0.1:4173',
     reuseExistingServer: !process.env.CI,
     timeout: 60 * 1000,
