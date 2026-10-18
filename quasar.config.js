@@ -15,10 +15,14 @@ export default defineConfig(() => {
       'material-icons',
     ],
 
+    
     build: {
+      publicPath: '/quasar-playwright-cicd/',
+
       target: {},
 
       vueRouterMode: 'hash',
+
 
       vitePlugins: [
         [
